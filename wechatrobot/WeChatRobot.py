@@ -15,7 +15,7 @@ Bus = EventBus()
 class WeChatRobot:
     
     def __init__(self , ip : str = "127.0.0.1" , port : int = 18888, socket_ip : str = "0.0.0.0" , socket_port : int = 23456, 
-                 BASE_PATH :  = "C:\\Users\\user\\My Documents\\WeChat Files"):
+                 BASE_PATH : str = "C:\\Users\\user\\My Documents\\WeChat Files"):
         self.ip = ip
         self.port = port
         self.socket_ip = socket_ip
