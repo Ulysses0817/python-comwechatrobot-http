@@ -6,9 +6,11 @@ import base64
 from wechatrobot import ChatRoomData_pb2 as ChatRoom
 
 class Api:
-    port : int = 18888
-    ip : str = '127.0.0.1'
-    db_handle : Dict[str, int] = 0
+
+    def __init__(self , ip : str = '127.0.0.1' , port : int = 18888, db_handle : Dict[str, int] = 0):
+        self.ip = ip
+        self.port = port
+        self.db_handle = db_handle
 
     def SetIpPort(self, ip : str = '127.0.0.1', port : int = 18888):
         self.ip = ip
