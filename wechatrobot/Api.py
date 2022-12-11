@@ -10,7 +10,7 @@ class Api:
     ip : str = '127.0.0.1'
     db_handle : Dict[str, int] = 0
 
-    def SetIpPort(self, ip='127.0.0.1', port=18888):
+    def SetIpPort(self, ip : str = '127.0.0.1', port : int = 18888):
         self.ip = ip
         self.port = port
         print('set ip and port success!')
