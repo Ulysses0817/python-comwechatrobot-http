@@ -1,8 +1,13 @@
 ```
 from wechatrobot import WeChatRobot
 
+ip = '127.0.0.1'
+port = 18888
+socket_ip = '0.0.0.0'
+socket_port = 10808
+BASE_PATH = 'C:\\Users\\user\\My Documents\\WeChat Files'
 
-bot = WeChatRobot()
+bot = WeChatRobot(ip = ip, port = port, socket_ip = socket_ip, socket_port = socket_port, BASE_PATH = BASE_PATH)
 
 @bot.on("friend_msg")
 def on_friend_msg(msg):
