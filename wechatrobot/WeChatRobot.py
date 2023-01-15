@@ -35,8 +35,8 @@ class WeChatRobot:
     def run(self , main_thread : bool = True):
         #StartHook
         self.StartMsgHook(port = self.socket_port)
-        self.StartImageHook(save_path = self.BASE_PATH)
-        self.StartVoiceHook(save_path = self.BASE_PATH)
+        self.StartImageHook(save_path = self.BASE_PATH+"\\HookImages")
+        self.StartVoiceHook(save_path = self.BASE_PATH+"\\HookVoices")
 
         class ReceiveMsgSocketServer(socketserver.BaseRequestHandler):
             def __init__(self, *args, **kwargs):
